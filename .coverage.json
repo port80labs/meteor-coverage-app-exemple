@@ -1,8 +1,11 @@
 {
   "include": [
-    "**/packages/cgalvarez_school.js",
-    "**/packages/lmieulet_meteor-coverage.js"
   ],
+  "exclude": {
+    "general": [],
+    "server": [],
+    "client": []
+  },
   "remap": {
     "format": ["html", "clover", "cobertura", "json", "json-summary", "lcovonly", "teamcity", "text", "text-summary"]
   }

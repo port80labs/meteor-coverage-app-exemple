@@ -64,6 +64,7 @@ dispatch:mocha-phantomjs
 practicalmeteor:chai
 practicalmeteor:sinon
 practicalmeteor:mocha
+practicalmeteor:mocha-console-runner
 hwillson:stub-collections
 johanbrook:publication-collector
 
