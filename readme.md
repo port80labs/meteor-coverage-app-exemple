@@ -43,3 +43,5 @@ See the .travis.yml for additional informations
     git submodule update --remote
     cd packages/meteor-coverage
     git pull [..]
+
+## Touch
