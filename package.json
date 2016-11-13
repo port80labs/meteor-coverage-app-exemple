@@ -5,10 +5,10 @@
     "test": "meteor npm run coverage-app-unit && meteor npm run coverage-app-full",
     "test:app": "meteor npm run coverage-app-unit && meteor npm run coverage-app-full && meteor npm run coverage-packages",
     "test-app-unit": "spacejam --driver-package=practicalmeteor:mocha-console-runner test",
-    "test-app-unit-watch": "meteor --driver-package=practicalmeteor:mocha-console-runner test",
+    "test-app-unit-watch": "meteor test --driver-package dispatch:mocha --port 4000",
     "coverage-app-unit": "spacejam --driver-package=practicalmeteor:mocha-console-runner test --coverage 'out_lcovonly out_coverage out_html'",
     "test-app-full": "spacejam --driver-package=practicalmeteor:mocha-console-runner test --full-app",
-    "test-app-full-watch": "meteor --driver-package=practicalmeteor:mocha-console-runner test --full-app",
+    "test-app-full-watch": "meteor test --full-app --driver-package dispatch:mocha --port 4000",
     "test-app-full:dispatch": "meteor test --full-app --once --driver-package dispatch:mocha-phantomjs",
     "coverage-app-full": "spacejam --driver-package=practicalmeteor:mocha-console-runner test --full-app --coverage 'out_lcovonly out_coverage out_html in_coverage'",
     "test-packages": "spacejam --driver-package=practicalmeteor:mocha-console-runner test-packages --full-app",
@@ -21,6 +21,7 @@
   "dependencies": {
     "autoprefixer": "^6.3.1",
     "babel-runtime": "^6.18.0",
+    "bcrypt": "^0.8.7",
     "faker": "^3.0.1",
     "meteor-node-stubs": "~0.2.0"
   },

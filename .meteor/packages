@@ -75,3 +75,4 @@ lmieulet:meteor-coverage
 app-prod-security
 somepkg
 shell-server@0.2.1
+dispatch:mocha
