@@ -2,7 +2,7 @@
   "scripts": {
     "pretest": "npm run lint --silent",
     "start": "meteor",
-    "test": "meteor npm run coverage-app-unit && meteor npm run coverage-app-full && meteor npm run coverage-packages",
+    "test": "meteor npm run coverage-app-unit && meteor npm run coverage-app-full",
     "test:app": "meteor npm run coverage-app-unit && meteor npm run coverage-app-full && meteor npm run coverage-packages",
     "test-app-unit": "spacejam --driver-package=practicalmeteor:mocha-console-runner test",
     "test-app-unit-watch": "meteor --driver-package=practicalmeteor:mocha-console-runner test",
